@@ -1,0 +1,148 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity counter is
+port (clk, reset : in std_logic;
+        digit1, digit2, digit3, digit4, digit5, digit6 : out std_logic_vector(6 downto 0));
+end counter;
+
+architecture counter of counter is
+signal cnt : integer range 0 to 50000000;
+begin
+    process(clk, reset)
+			  VARIABLE temp1: INTEGEr RANGE 0 TO 10;
+           VARIABLE temp2: INTEGER RANGE 0 TO 10;
+			  VARIABLE temp3: INTEGER RANGE 0 TO 10;
+			  VARIABLE temp4: INTEGER RANGE 0 TO 10;
+			  VARIABLE temp5: INTEGER RANGE 0 TO 10;
+			  VARIABLE temp6: INTEGER RANGE 0 TO 10;
+          
+ BEGIN
+ 
+ if(reset='1')then
+   temp1 :=0;
+   temp2 :=0;
+   temp3 :=0;
+   temp4 :=0;
+   temp5 :=0;
+   temp6 :=0;
+ 
+  elsif(clk'event and clk ='1')then
+  if(cnt = 50000000)then
+   cnt <= 0;
+      temp1 :=temp1+1;
+   else cnt <= cnt+1;
+   if(temp1=10)then
+      temp1:=0;
+    temp2:=temp2+1;
+   if(temp2=6)then
+       temp2:=0;
+     temp3:=temp3+1;
+   if(temp3=10)then
+    temp3:=0;
+    temp4:=temp4+1;
+    if(temp4=6)then
+     temp4:=0;
+     temp5:=temp5+1;
+     if(temp5=10)then
+      temp5:=0;
+      temp6:=temp6+1;
+      
+      end if;
+      end if;
+      end if;
+     end if;
+     end if;
+     end if;
+     end if;
+     
+case temp1 is
+   when 0=> digit1 <="1000000";
+   when 1=> digit1 <="1111001";
+   when 2=> digit1 <="0100100";
+   when 3=> digit1 <="0110000";
+   when 4=> digit1 <="0011001";
+   when 5=> digit1 <="0010010";  
+   when 6=> digit1 <="0000010";
+   when 7=> digit1 <="1011000"; 
+   when 8=> digit1 <="0000000";
+   when 9=> digit1 <="0011000";
+ when others=> null;
+ end case;
+ 
+ case temp2 is
+   when 0=> digit2 <="1000000";
+   when 1=> digit2 <="1111001";
+   when 2=> digit2 <="0100100";
+   when 3=> digit2 <="0110000";
+   when 4=> digit2 <="0011001";
+   when 5=> digit2 <="0010010";  
+   when 6=> digit2 <="0000010";
+   when 7=> digit2 <="1011000"; 
+   when 8=> digit2 <="0000000";
+   when 9=> digit2 <="0011000";
+ when others=> null;
+ 
+ end case;
+ 
+ case temp3 is
+	when 0=> digit3 <="1000000";
+	when 1=> digit3 <="1111001";
+   when 2=> digit3 <="0100100";
+   when 3=> digit3 <="0110000";
+   when 4=> digit3 <="0011001";
+   when 5=> digit3 <="0010010";  
+   when 6=> digit3 <="0000010";
+   when 7=> digit3 <="1011000"; 
+	when 8=> digit3 <="0000000";
+	when 9=> digit3 <="0011000";
+ when others=> null;
+ 
+ end case;
+ 
+ case temp4 is
+	when 0=> digit4 <="1000000";
+	when 1=> digit4 <="1111001";
+   when 2=> digit4 <="0100100";
+   when 3=> digit4 <="0110000";
+   when 4=> digit4 <="0011001";
+   when 5=> digit4 <="0010010";  
+   when 6=> digit4 <="0000010";
+   when 7=> digit4 <="1011000"; 
+	when 8=> digit4 <="0000000";
+	when 9=> digit4 <="0011000";
+ when others=> null;
+ 
+ end case;
+ 
+ case temp5 is
+	when 0=> digit5 <="1000000";
+	when 1=> digit5 <="1111001";
+   when 2=> digit5 <="0100100";
+   when 3=> digit5 <="0110000";
+   when 4=> digit5 <="0011001";
+   when 5=> digit5 <="0010010";  
+   when 6=> digit5 <="0000010";
+   when 7=> digit5 <="1011000"; 
+	when 8=> digit5 <="0000000";
+	when 9=> digit5 <="0011000";
+ when others=> null;
+ 
+ end case;
+ 
+ case temp6 is
+	when 0=> digit6 <="1000000";
+	when 1=> digit6 <="1111001";
+   when 2=> digit6 <="0100100";
+   when 3=> digit6 <="0110000";
+   when 4=> digit6 <="0011001";
+   when 5=> digit6 <="0010010";  
+   when 6=> digit6 <="0000010";
+   when 7=> digit6 <="1011000"; 
+	when 8=> digit6 <="0000000";
+	when 9=> digit6 <="0011000";
+ when others=> null;
+ 
+ end case;
+ end process;
+ end counter;
