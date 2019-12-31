@@ -8,6 +8,8 @@
 #include <avr/io.h>
 #include<util/delay.h>
 #include<util/twi.h>
+int BSEG(int num);
+int CSEG(int num);
 int main(void)
 {
     /* Replace with your application code */
