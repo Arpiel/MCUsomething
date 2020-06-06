@@ -1,0 +1,14 @@
+Project Outputs Generation Report
+---------------------------------
+Start Output Generation At 오후 5:56:08 On 2020-06-05
+
+Output: Board Information
+Type  : Board Information
+From  : PCB Document [PCB1.CMPcbDoc]
+   Generated File[PCB1.html]
+
+
+Files Generated   : 1
+Documents Printed : 0
+
+Finished Output Generation At 오후 5:56:10 On 2020-06-05

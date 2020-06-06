@@ -1,0 +1,13 @@
+"Designator","Footprint","Mid X","Mid Y","Ref X","Ref Y","Pad X","Pad Y","Layer","Rotation","Comment"
+""
+"U1","PCB-gl35ubmjhk6nz3i99m29-1","2285mil","2655mil","2285mil","2655mil","2195.433mil","2540.827mil","T","90.00","Texas Instruments DRV11873PWPR"
+"C1","CAPC1608X90X35LL15T15","2320mil","2410mil","2320mil","2410mil","2320mil","2384.409mil","T","90.00","0.1uf/1608"
+"C2","CAPC1608X90X35LL15T15","2250mil","2410mil","2250mil","2410mil","2250mil","2384.409mil","T","90.00","0.1uf/1608"
+"C3","PCB-ut6qvzar43b06cy077h6-1","2310mil","2900mil","2310mil","2900mil","2280.472mil","2900mil","T","0.00","2.2uf/1608"
+"J1","PCB-mruwntkvy73mrw75dg9m-1","1960mil","2650mil","1960mil","2500mil","1960mil","2500mil","T","90.00","Molex 90120-0764"
+"J2","PCB-mruwntkvy73mrw75dg9m-1","2555mil","2670mil","2555mil","2520mil","2555mil","2520mil","T","90.00","Molex 90120-0764"
+"R1","PCB-3r7gkicy0hnjsi8s7sje-1","2130mil","2410mil","2130mil","2410mil","2130mil","2383.425mil","T","90.00","100k/1608"
+"R2","PCB-3r7gkicy0hnjsi8s7sje-1","2190mil","2410mil","2190mil","2410mil","2190mil","2383.425mil","T","90.00","100k/1608"
+"R3","RESC1608X55X30LL15T15","2170mil","2905mil","2170mil","2905mil","2194.606mil","2905mil","T","180.00","3.3k/1608"
+"J3","PCB-ayp4uy6mce3kuznu7cpv-1","1975mil","2375mil","2025mil","2375mil","2025mil","2375mil","T","180.00","Barrette 2p"
+
